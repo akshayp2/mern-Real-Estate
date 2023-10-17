@@ -2,7 +2,9 @@ import React from 'react'
 
 function SingIn() {
   return (
-    <div>SingIn</div>
+    <div>
+      <h1>sing In</h1>
+    </div>
   )
 }
 

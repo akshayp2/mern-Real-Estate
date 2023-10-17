@@ -6,12 +6,15 @@ import SingUp from './Pages/SingUp'
 import About from './Pages/About'
 import Home from './Pages/Home'
 import Profile from './Pages/Profile'
+import Header from './components/Header'
 
 function App() {
  
 
   return (
     <BrowserRouter>
+    <Header>
+      
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/sing-in' element={<SingIn/>}/>
@@ -19,8 +22,9 @@ function App() {
     <Route path='/about' element={<About/>}/>
     <Route path='/profile' element={<Profile/>}/>
     </Routes>
+    </Header>
     </BrowserRouter>
   )
 }
-
+ 
 export default App
