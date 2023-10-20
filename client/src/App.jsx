@@ -11,19 +11,16 @@ import Header from './components/Header'
 function App() {
  
 
-  return (
-    <BrowserRouter>
-    <Header>
-      
+  return (<BrowserRouter>
+  <Header/>
     <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/sing-in' element={<SingIn/>}/>
-    <Route path='/sing-up' element={<SingUp/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/profile' element={<Profile/>}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/sing-in" element={<SingIn />} />
+      <Route path='/sing-up' element={<SingUp/>}/>
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/about" element={<About />} />
     </Routes>
-    </Header>
-    </BrowserRouter>
+  </BrowserRouter>
   )
 }
  
